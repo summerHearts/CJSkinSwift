@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.module_name  = "CJSkinSwift"
   s.version      = "1.0.0"
   s.summary      = "CJSkinSwift换肤框架，支持颜色、图片、字体等元素的动态切换."
-  s.homepage     = "https://github.com/lele8446/CJImageView"
+  s.homepage     = "https://github.com/lele8446/CJSkinSwift"
   # s.license      = "MIT"
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   }
   s.author       = { "ChiJinLian" => "lele8446@foxmail.com" }
   s.platform     = :ios, "10.0"
-  s.source       = { :git => "https://github.com/lele8446/CJImageView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lele8446/CJSkinSwift.git", :tag => "#{s.version}" }
   s.source_files  = "CJSkinSwift/Classes/*"
   s.swift_version = '5'
   # s.swift_versions = ['5.1', '5.2', '5.3']
