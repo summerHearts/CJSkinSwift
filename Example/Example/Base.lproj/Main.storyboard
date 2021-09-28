@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O7g-DK-7y9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wfC-C0-dNf">
+            <objects>
+                <tabBarController storyboardIdentifier="Tab" id="O7g-DK-7y9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7d0-K1-jzA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QXO-fN-0E0" kind="relationship" relationship="viewControllers" id="Yro-Sk-eJX"/>
+                        <segue destination="Soy-sN-ub9" kind="relationship" relationship="viewControllers" id="WPV-8U-2bQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvL-7h-ZSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2448" y="-751"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="uU3-HS-aBg">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation" id="QXO-fN-0E0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="ipa-Fk-zJK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5N9-q1-gkP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ClK-fH-PdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxa-JL-asu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3238" y="-25"/>
+        </scene>
+        <!--下载-->
+        <scene sceneID="kbm-Dg-KBb">
+            <objects>
+                <navigationController id="Soy-sN-ub9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="下载" id="of9-KX-Gct"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zad-MR-hbn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qrx-iR-9MT" kind="relationship" relationship="rootViewController" id="GtO-EA-cCB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQg-w2-daP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1793" y="-25"/>
+        </scene>
+        <!--下载皮肤-->
+        <scene sceneID="yXa-fi-Fdr">
+            <objects>
+                <viewController id="Qrx-iR-9MT" customClass="WorkViewController" customModule="CJSkinSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EM1-ka-k65">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-ux-1hN">
+                                <rect key="frame" x="164.5" y="188" width="85" height="45"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Xhe-xf-mP9"/>
+                                    <constraint firstAttribute="height" constant="45" id="jpM-22-q0a"/>
+                                </constraints>
+                                <state key="normal" title="下载皮肤"/>
+                                <connections>
+                                    <action selector="downloadSkin:" destination="Qrx-iR-9MT" eventType="touchUpInside" id="cDn-I6-5Dq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hic-vy-5QE">
+                                <rect key="frame" x="164.5" y="303" width="85" height="45"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="43S-HU-VIS"/>
+                                    <constraint firstAttribute="height" constant="45" id="r9v-5O-Lyt"/>
+                                </constraints>
+                                <state key="normal" title="换肤"/>
+                                <connections>
+                                    <action selector="changeSkin:" destination="Qrx-iR-9MT" eventType="touchUpInside" id="siZ-b7-jSy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rpd-za-9zT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Pm-ux-1hN" firstAttribute="top" secondItem="Rpd-za-9zT" secondAttribute="top" constant="100" id="Nib-Jd-3YI"/>
+                            <constraint firstItem="0Pm-ux-1hN" firstAttribute="centerX" secondItem="EM1-ka-k65" secondAttribute="centerX" id="cCL-y7-Imf"/>
+                            <constraint firstItem="Hic-vy-5QE" firstAttribute="top" secondItem="0Pm-ux-1hN" secondAttribute="bottom" constant="70" id="jRj-JR-BYB"/>
+                            <constraint firstItem="Hic-vy-5QE" firstAttribute="centerX" secondItem="EM1-ka-k65" secondAttribute="centerX" id="sfQ-oz-ZBn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="下载皮肤" id="E3J-nK-L3e"/>
+                    <connections>
+                        <outlet property="changeSkinButton" destination="Hic-vy-5QE" id="KeY-4s-gjB"/>
+                        <outlet property="downloadButton" destination="0Pm-ux-1hN" id="CUz-VS-GeY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POL-ov-RLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1794" y="670"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="MessageViewController" customModule="CJSkinSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字体、颜色" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-ya-gOK">
+                                <rect key="frame" x="20" y="168" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uCX-ea-sRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1Q-XO-Uxp">
+                                <rect key="frame" x="164.5" y="329" width="85" height="45"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Neo-vE-Agb"/>
+                                    <constraint firstAttribute="width" constant="85" id="uQl-Kx-LMr"/>
+                                </constraints>
+                                <state key="normal" title="换肤"/>
+                                <connections>
+                                    <action selector="changeSkin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PZ-tc-AcQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8L-Rw-Bob">
+                                <rect key="frame" x="164.5" y="246" width="85" height="45"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ieK-wj-dip"/>
+                                    <constraint firstAttribute="width" constant="85" id="lWp-U2-vCh"/>
+                                </constraints>
+                                <state key="normal" title="删除皮肤"/>
+                                <connections>
+                                    <action selector="nextVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vKH-tb-twC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-nb-hvW">
+                                <rect key="frame" x="147" y="419" width="120" height="45"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="TUy-Mj-nEz"/>
+                                    <constraint firstAttribute="height" constant="45" id="ylm-ny-SD2"/>
+                                </constraints>
+                                <state key="normal" title="更新皮肤信息"/>
+                                <connections>
+                                    <action selector="updateSkinData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z0Q-al-ud6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TSv-ya-gOK" secondAttribute="trailing" constant="20" id="0g3-yI-w4n"/>
+                            <constraint firstItem="C8L-Rw-Bob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AP3-Iq-Gyr"/>
+                            <constraint firstItem="TSv-ya-gOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="At4-mZ-n86"/>
+                            <constraint firstItem="BBh-nb-hvW" firstAttribute="top" secondItem="s1Q-XO-Uxp" secondAttribute="bottom" constant="45" id="F7R-WV-33D"/>
+                            <constraint firstItem="TSv-ya-gOK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="J54-Yf-tqu"/>
+                            <constraint firstItem="s1Q-XO-Uxp" firstAttribute="top" secondItem="C8L-Rw-Bob" secondAttribute="bottom" constant="38" id="N6z-Ts-ljR"/>
+                            <constraint firstItem="BBh-nb-hvW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QzT-eW-Fdf"/>
+                            <constraint firstItem="C8L-Rw-Bob" firstAttribute="top" secondItem="TSv-ya-gOK" secondAttribute="bottom" constant="38" id="h9z-M1-6Q4"/>
+                            <constraint firstItem="TSv-ya-gOK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qPd-bA-vaj"/>
+                            <constraint firstItem="s1Q-XO-Uxp" firstAttribute="centerX" secondItem="C8L-Rw-Bob" secondAttribute="centerX" id="zHg-bs-jNF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="DL4-Js-laa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="TSv-ya-gOK" id="uGC-tU-e8T"/>
+                        <outlet property="nextButton" destination="C8L-Rw-Bob" id="OH0-Br-oIX"/>
+                        <outlet property="skinButton" destination="s1Q-XO-Uxp" id="Ghs-a4-VnX"/>
+                        <outlet property="updateSkinButton" destination="BBh-nb-hvW" id="gJi-Lc-bbs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3239.130434782609" y="669.64285714285711"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wJx-d8-Ui2">
+            <objects>
+                <viewController storyboardIdentifier="Second" hidesBottomBarWhenPushed="YES" id="Yig-3c-Z3q" customClass="SecondViewController" customModule="CJSkinSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXI-i5-xhP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-cL-1Vu">
+                                <rect key="frame" x="87" y="219" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n3c-cL-1Vu" secondAttribute="height" multiplier="15:8" id="s64-l6-Uoj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMI-ZG-d2r">
+                                <rect key="frame" x="16" y="124" width="382" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ORV-MN-2aW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuW-f1-fNF">
+                                <rect key="frame" x="164.5" y="405" width="85" height="46"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Wmz-R8-4P6"/>
+                                    <constraint firstAttribute="width" constant="85" id="Wnr-Dk-Jgf"/>
+                                </constraints>
+                                <state key="normal" title="换肤"/>
+                                <connections>
+                                    <action selector="changeSkin:" destination="Yig-3c-Z3q" eventType="touchUpInside" id="r2H-gF-dO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BC-cH-CJv">
+                                <rect key="frame" x="164.5" y="493" width="85" height="46"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="MIm-YX-FRa"/>
+                                    <constraint firstAttribute="width" constant="85" id="SQu-pe-hmh"/>
+                                </constraints>
+                                <state key="normal" title="删除皮肤"/>
+                                <connections>
+                                    <action selector="removeSkin:" destination="Yig-3c-Z3q" eventType="touchUpInside" id="MOV-wf-8oU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fYY-So-iw9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EuW-f1-fNF" firstAttribute="centerX" secondItem="iXI-i5-xhP" secondAttribute="centerX" id="44p-PZ-SVU"/>
+                            <constraint firstItem="n3c-cL-1Vu" firstAttribute="leading" secondItem="fYY-So-iw9" secondAttribute="leading" constant="87" id="CbV-PK-Sb3"/>
+                            <constraint firstItem="xMI-ZG-d2r" firstAttribute="leading" secondItem="fYY-So-iw9" secondAttribute="leading" constant="16" id="PiK-ob-Ykz"/>
+                            <constraint firstItem="xMI-ZG-d2r" firstAttribute="top" secondItem="fYY-So-iw9" secondAttribute="top" constant="80" id="VeJ-lX-TZC"/>
+                            <constraint firstItem="0BC-cH-CJv" firstAttribute="top" secondItem="EuW-f1-fNF" secondAttribute="bottom" constant="42" id="b90-hP-rho"/>
+                            <constraint firstItem="fYY-So-iw9" firstAttribute="trailing" secondItem="n3c-cL-1Vu" secondAttribute="trailing" constant="87" id="cKf-KM-0ds"/>
+                            <constraint firstItem="0BC-cH-CJv" firstAttribute="centerX" secondItem="iXI-i5-xhP" secondAttribute="centerX" id="gA0-8C-B6A"/>
+                            <constraint firstItem="fYY-So-iw9" firstAttribute="trailing" secondItem="xMI-ZG-d2r" secondAttribute="trailing" constant="16" id="tcE-pf-RPi"/>
+                            <constraint firstItem="EuW-f1-fNF" firstAttribute="top" secondItem="n3c-cL-1Vu" secondAttribute="bottom" constant="58" id="uw5-wF-kcg"/>
+                            <constraint firstItem="n3c-cL-1Vu" firstAttribute="top" secondItem="xMI-ZG-d2r" secondAttribute="bottom" constant="50" id="uyF-hr-ya5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="bXL-yw-JcF"/>
+                    <connections>
+                        <outlet property="button" destination="EuW-f1-fNF" id="l7L-69-cAb"/>
+                        <outlet property="imageView" destination="n3c-cL-1Vu" id="H5V-mW-Gg4"/>
+                        <outlet property="label" destination="xMI-ZG-d2r" id="aN7-1c-6rp"/>
+                        <outlet property="removeSkinButton" destination="0BC-cH-CJv" id="IYx-dh-TZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVh-NP-mBF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3239.130434782609" y="1346.6517857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

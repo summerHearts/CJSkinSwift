@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (5.4.4)
+  - CJSkinSwift (1.0.0):
+    - Alamofire (>= 5.0.0)
+    - SSZipArchive
+  - SSZipArchive (2.4.2)
+
+DEPENDENCIES:
+  - CJSkinSwift (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  CJSkinSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  CJSkinSwift: 5588e9e8da1de3ed749e09114dcf7f90da5bbae4
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+
+PODFILE CHECKSUM: 72312b9f5bcd116086e106513fcf18c386b8813f
+
+COCOAPODS: 1.8.4
